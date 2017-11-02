@@ -1,0 +1,16 @@
+.box {
+width:100px;
+height: 100px;
+  background-color: blue;
+}
+.para {
+color: green;
+width: 200px;
+border-style: dashed;
+border-color: orange;
+border-width: 3px;
+}
+.backgroundImage {
+width: 200px;
+height: 325px;
+}
