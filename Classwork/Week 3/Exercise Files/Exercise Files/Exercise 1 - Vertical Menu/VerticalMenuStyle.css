@@ -1,0 +1,21 @@
+#menu
+{
+ width: 200px;
+ list-style-type: none;
+ margin: 2px;
+ padding: 0px;
+}
+
+li {
+  padding: 2px;
+  margin: 2px;
+  background: red;
+}
+
+a {
+display: block;
+}
+
+a:hover{
+  background-color: grey;
+}

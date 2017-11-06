@@ -1,0 +1,31 @@
+#menu
+{
+ width: 400px;
+ height: 28px;
+ list-style-type: none;
+ /*background-color: #ff3d3d;*/
+
+ padding: 0;
+}
+
+#menu li {
+float: left;
+background-color: #999;
+}
+
+
+a {
+display: block;
+padding: 5px 10px;
+border-style: solid;
+border-width: thin;
+border-color: #fff;
+color:#000;
+text-decoration: none;
+}
+
+a:hover{
+  /*background-color: #db3636;*/
+  background-color: #666;
+  color:#fff;
+}

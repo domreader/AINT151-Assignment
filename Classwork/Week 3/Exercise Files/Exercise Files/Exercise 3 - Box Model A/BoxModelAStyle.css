@@ -1,0 +1,50 @@
+#header {
+
+  width: 900px;
+  height: 70px;
+  margin: 10px;
+  background-color: #999;
+  border-style: solid;
+  border-color: #fff;
+  text-align: center;
+
+
+
+}
+
+#leftmenu {
+
+  height: 500px;
+  width: 295px;
+  margin: 10px;
+  background-color: #999;
+  border-style: solid;
+  border-color: #fff;
+  text-align: center;
+  float: left;
+
+}
+
+#maincontent {
+
+  height: 500px;
+  width: 595px;
+  margin: 10px;
+  background-color: #999;
+  border-style: solid;
+  border-color: #fff;
+  text-align: center;
+  float: left;
+}
+
+#footer {
+
+  height: 30px;
+  width: 900px;
+  margin: 10px;
+  background-color: #999;
+  border-style: solid;
+  border-color: #fff;
+  text-align: center;
+  clear: left;
+}
