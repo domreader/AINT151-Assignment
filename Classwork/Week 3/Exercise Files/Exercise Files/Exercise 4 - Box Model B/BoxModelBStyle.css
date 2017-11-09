@@ -1,1 +1,70 @@
+#container
+{
 
+width: 900px;
+height: 70px;
+margin: 0 auto;
+
+}
+
+#header
+{
+
+ margin-bottom: 10px;
+ background-color: grey;
+ height: 70px;
+ width: 900px;
+ text-align: center;
+
+}
+
+#leftmenu
+{
+
+margin-right: 10px;
+float: left;
+background-color: grey;
+height: 500px;
+width: 245px;
+text-align: center;
+
+}
+
+#maincontent
+{
+
+float: left;
+background-color: grey;
+height: 500px;
+width: 390px;
+text-align: center;
+
+}
+
+#rightmenu
+{
+
+margin-left: 10px;
+float: left;
+background-color: grey;
+height: 500px;
+width: 245px;
+text-align: center;
+
+}
+
+.clear
+{
+  clear: both;
+}
+
+#footer
+{
+
+margin-top: 10px;
+background-color: grey;
+height: 30px;
+width: 900px;
+text-align: center;
+
+}

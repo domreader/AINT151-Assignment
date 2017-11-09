@@ -1,0 +1,38 @@
+
+#container
+{
+  margin: 0 auto;
+  height: 900px;
+  width: 1000px;
+}
+
+#header
+{
+  background-color: #999;
+  color: #999;
+  float: right;
+  margin-bottom: 10px;
+  height: 70px;
+  width: 900px;
+}
+
+.leftitem
+{
+  background-color: #999;
+  color: #999;
+  float: right;
+  margin: 0px 10px 10px 0px;
+  height: 100px;
+  width: 600px;
+}
+
+#rightmenu
+{
+
+  background-color: #999;
+  color: #999;
+  float: right;
+  margin-left: 0;
+  height: 430px;
+  width: 290px;
+}
