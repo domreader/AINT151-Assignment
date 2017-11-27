@@ -1,0 +1,62 @@
+html
+{
+  background-color: #999;
+}
+
+/* The navigation bar itself */
+.navigationBar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/*navigation bar links*/
+.navigationBar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.main {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#container {
+    background-color: #555;
+    height: 1080px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    width: inherit;
+}
+
+#game
+{
+  background-color: white;
+  height: 1030px;
+  width: inherit;
+  padding: 0px 0px 0px 40px;
+}
+
+.clear
+{
+  clear: both;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  background-color: black;
+  text-align: center;
+}
