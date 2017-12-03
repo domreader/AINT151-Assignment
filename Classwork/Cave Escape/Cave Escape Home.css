@@ -31,7 +31,7 @@ html
 
 #container {
     background-color: #555;
-    height: 1080px;
+    height: inherit;
     padding-top: 40px;
     padding-right: 40px;
     padding-left: 40px;
@@ -41,9 +41,9 @@ html
 #game
 {
   background-color: white;
-  height: 1030px;
+  height: 550px;
   width: inherit;
-  padding: 0px 0px 0px 40px;
+  padding-bottom: 10px;
 }
 
 .clear

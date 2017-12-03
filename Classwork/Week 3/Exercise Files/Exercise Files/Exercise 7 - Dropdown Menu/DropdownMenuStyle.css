@@ -1,0 +1,18 @@
+#menu
+{
+}
+
+li
+{
+float: left;
+margin: 10px;
+background-color: #999;
+color: #fff;
+border: 10px;
+}
+
+ul span
+{
+  color: #999;
+  float: left;
+}
