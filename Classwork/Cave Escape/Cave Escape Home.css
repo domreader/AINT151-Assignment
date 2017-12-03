@@ -37,13 +37,19 @@ html
     padding-left: 40px;
     width: inherit;
 }
-
+/*game background where JS will sit*/
 #game
 {
   background-color: white;
   height: 550px;
   width: inherit;
+<<<<<<< HEAD
   padding-bottom: 10px;
+=======
+  padding: 0px 0px 0px 40px;
+  text-align: left;
+
+>>>>>>> 411828dadbd55d8e297c606933d317b151607d95
 }
 
 .clear
