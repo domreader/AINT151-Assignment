@@ -30,10 +30,21 @@ var roomArray = [
 			{
 				text:'Go to room 2',
 				index:1
+			},
+			{
+				text:'Go to room 4',
+				index:3
+			}
+		]
+	},
+	{
+		title:'room 4',
+		text:'you are standing room 4',
+		choices:[
+			{
+				text:'Go to room 3',
+				index:2
 			}
 		]
 	}
 ]
-
-
-

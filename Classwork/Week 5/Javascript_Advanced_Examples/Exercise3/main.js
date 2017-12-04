@@ -17,10 +17,5 @@ function OnLoad()
 	{
 		var tag = "<button type=\"button\">" + roomObject.choices[1] + "</button>";
 		document.getElementById('roomchoices').innerHTML += tag;
-
 	}
-
-
-
-
 }
