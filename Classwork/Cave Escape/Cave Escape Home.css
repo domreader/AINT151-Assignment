@@ -31,26 +31,30 @@ html
 
 #container {
     background-color: #555;
-    height: inherit;
+    height: 1080px;
     padding-top: 40px;
     padding-right: 40px;
     padding-left: 40px;
-    width: inherit;
+    width: 96.7%;
 }
 /*game background where JS will sit*/
 #game
 {
-  background-color: white;
-  height: 550px;
+  background-color: #704225;
+  background-color: ;
+  height: 90%;
   width: inherit;
-<<<<<<< HEAD
-  padding-bottom: 10px;
-=======
-  padding: 0px 0px 0px 40px;
-  text-align: left;
+  padding: 40px 40px 40px 40px;
+  margin: auto;
+  font-size: 25px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 25px;
+  
 
->>>>>>> 411828dadbd55d8e297c606933d317b151607d95
 }
+
+
 
 .clear
 {

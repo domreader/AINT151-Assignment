@@ -1,15 +1,3 @@
-
-
-function StorePlayerData()
-{
-var name = document.forms[0]["playername"].value;
-localStorage.setItem("playername", name);
-
-var colour = document.forms[0]["playercolour"].value;
-localStorage.setItem("playercolour", colour);
-}
-
-function OnLoad()
 {
 	document.getElementById('roomTitle').innerHTML = roomArray[0].title
 
@@ -24,7 +12,7 @@ function SelectRoom(roomIndex)
 
 	for(var i = 0; i < roomArray[roomIndex].choices.length; i++)
 	{
-		var tag = "<button onClick=\"SelectRoom(" + roomArray[roomIndex].choices[i].index + ")\">" + roomArray[roomIndex].choices[i].text + "</button>";
+		var tag = "<button style='margin-right:10px;' onClick=\"SelectRoom(" + roomArray[roomIndex].choices[i].index + ")\">" + roomArray[roomIndex].choices[i].text + "</button>";
 		document.getElementById('roomChoices').innerHTML += tag;
 	}
 
