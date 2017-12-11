@@ -37,17 +37,17 @@ html
     padding-left: 40px;
     position: inherit;
     width: auto;
-    position: static;
+    position: sticky;
     border: 10px 10px 10px 10px
 }
 /*game background where JS will sit*/
 #game
 {
   background-color: #704225;
-  height: inherit;
+  height: 850px;
   width: inherit;
   padding: 165px 40px 165px 40px;
-  font-size: 25px;
+  font-size: 33px;
   text-align: center;
   vertical-align: middle;
   border: 5px 5px 5px 5px;
@@ -66,6 +66,6 @@ html
   bottom: 0;
   left: 0;
   padding: 20px;
-  background-color: black;
+  background-color: white;
   text-align: center;
 }

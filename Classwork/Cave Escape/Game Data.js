@@ -1,7 +1,9 @@
+var playerName = localStorage.getItem("playername");
+
 var roomArray = [
 	{
 		title:'The Awakening',
-		text: 'You have awoken in a dark cave. In the room there is a door with a small crack in it which allows a small amount of light through',
+		text: playerName +' has awoken in a dark cave. The room is a box shape with a door with a small crack in it which allows a small amount of light through',
 		choices:[
 			{
 				text:'Inspect the room',
@@ -15,7 +17,7 @@ var roomArray = [
 	},
 	{
 		title:'Inspecting the room',
-		text:'As you look around the room you go to the far wall and study it. However currently it is too dark to notice anything prominent. Maybe there is a way to brighten up the room?',
+		text:'As' + playerName +  'looks around the room they go to the far wall and study it. However currently it is too dark to notice anything prominent. Maybe there is a way to brighten up the room?',
 		choices:[
 			{
 				text:'Look through the Crack',
@@ -35,7 +37,7 @@ var roomArray = [
 	},
 	{
 		title:'Try to open door',
-		text:'You pull on the door hard rattling its heavy frame but it does not move. However from the noise the guard has stirred and is walking towards the door. He yells at you "Back away from the door". As you back up he rushes in towards you with his sword drawn.',
+		text:'You pull on the door hard rattling its heavy frame but it does not move. However from the noise the guard has stirred and is walking towards the door. He yells at you "Back away from the door". As you back up he unlocks the door and rushes in towards you with his sword drawn.',
 		choices:[
 			{
 				text:'Side step the guard',
@@ -69,7 +71,7 @@ var roomArray = [
 	},
 	{
 		title:'End the guards life',
-		text:'You double back and stab the guard through the stomach, the sword pulls out as he falls to the floor goes through his back. You exit the room and retrieve your stuff from the chest',
+		text:'You double back and stab the guard through the stomach, the sword pulls out as he falls to the floor. You take the key for the chest off of him. You exit the room and retrieve your stuff from the chest',
 		choices:[
 			{
 				text:'Proceed to the next room',
@@ -167,7 +169,7 @@ var roomArray = [
 	},
 	{
 		title:'Back towards the cell',
-		text:'You double back and stab the guard through the stomach, the sword gets stuck and as he falls to the floor goes through his back. You exit the room and retrieve ,special item, from the chest',
+		text:'You get back up on your feet and run towards the cell. The further you run down the corridor it seems as if it is forever ending; whether this is what it seems or there are tricks being played upon you is unclear. The demon is stood at the beginning of the corridor with his head tilted sideways staring at you still. Finally you reach the end of the corridor/',
 		choices:[
 			{
 				text:'Into the cell',
@@ -180,8 +182,8 @@ var roomArray = [
 		text:'Unfortunately you have failed in escaping. Maybe next time?',
 		choices:[
 			{
-				text:'Start the battle',
-				index:18
+				text:'Restart the battle',
+				index:11
 			}
 		]
 	},
@@ -210,8 +212,8 @@ var roomArray = [
 		text:'Congratualtions, you have beaten Cave Escape. Now go and proceed to waste your time on another game, go on. Get out of here :)!',
 		choices:[
 			{
-				text:'Proceed to the next room',
-				index:21
+				text:'Restart the game - Only one ending though so good luck!',
+				index:0
 			}
 		]
 	}
