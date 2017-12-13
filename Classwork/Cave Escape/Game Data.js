@@ -17,7 +17,7 @@ var roomArray = [
 	},
 	{
 		title:'Inspecting the room',
-		text:'As' + playerName +  'looks around the room they go to the far wall and study it. However currently it is too dark to notice anything prominent. Maybe there is a way to brighten up the room?',
+		text:'As person looks around the room they go to the far wall and study it. However currently it is too dark to notice anything prominent. Maybe there is a way to brighten up the room?',
 		choices:[
 			{
 				text:'Look through the Crack',
@@ -81,7 +81,7 @@ var roomArray = [
 	},
 	{
 		title:'Proceed to the next room',
-		text:'You enter the next room and see a starcase to the next floor, around the room there are wooden tables and chairs. On top of these there are documents and other items.',
+		text:'You enter the next room and see a staircase to the next floor, around the room there are wooden tables and chairs. On top of these there are documents and other items.',
 		choices:[
 			{
 				text:'Inspect the war room',
@@ -95,7 +95,7 @@ var roomArray = [
 	},
 	{
 		title:'Inspecting the war room',
-		text:'You look around the table closer and you can see many different documents. One is a news article on a way to break out of chains, another is arts of fighting and the last is a cookbook. Mostly these are useless.',
+		text:'You look around the table closer and you can see many different documents. One is a news article on a way to break out of chains, another is arts of fighting and the last is a cookbook. Perhaps these could be useful skills to have.',
 		choices:[
 			{
 				text:'Head up the stairs',
@@ -169,7 +169,7 @@ var roomArray = [
 	},
 	{
 		title:'Back towards the cell',
-		text:'You get back up on your feet and run towards the cell. The further you run down the corridor it seems as if it is forever ending; whether this is what it seems or there are tricks being played upon you is unclear. The demon is stood at the beginning of the corridor with his head tilted sideways staring at you still. Finally you reach the end of the corridor/',
+		text:'You get back up on your feet and run towards the cell. The further you run down the corridor it seems as if it is forever ending; whether this is what it seems or there are tricks being played upon you is unclear. The demon is stood at the beginning of the corridor with his head tilted sideways staring at you still. Finally you reach the end of the corridor.',
 		choices:[
 			{
 				text:'Into the cell',
@@ -209,10 +209,10 @@ var roomArray = [
 	},
 	{
 		title:'Winning',
-		text:'Congratualtions, you have beaten Cave Escape. Now go and proceed to waste your time on another game, go on. Get out of here :)!',
+		text:'Congratulations, you have beaten Cave Escape. Now go and proceed to waste your time on another game, go on. Get out of here :)!',
 		choices:[
 			{
-				text:'Restart the game - Only one ending though so good luck!',
+				text:'Restart the game',
 				index:0
 			}
 		]
