@@ -7,6 +7,9 @@ localStorage.setItem("playername", name);
 
 var colour = document.forms[0]["playercolour"].value;
 localStorage.setItem("playercolour", colour);
+
+var Weapon = document.forms[0] ["Weapon"].value;
+localStorage.setItem("Weapon", weapon);
 }
 
 function OnLoad()
