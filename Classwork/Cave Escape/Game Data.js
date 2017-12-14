@@ -17,7 +17,7 @@ var roomArray = [
 	},
 	{
 		title:'Inspecting the room',
-		text:'As person looks around the room they go to the far wall and study it. However currently it is too dark to notice anything prominent. Maybe there is a way to brighten up the room?',
+		text: playerName +' looks around the room and goes to the far wall to study it. However currently it is too dark to notice anything prominent. Maybe there is a way to brighten up the room?',
 		choices:[
 			{
 				text:'Look through the Crack',
@@ -37,7 +37,7 @@ var roomArray = [
 	},
 	{
 		title:'Try to open door',
-		text:'You pull on the door hard rattling its heavy frame but it does not move. However from the noise the guard has stirred and is walking towards the door. He yells at you "Back away from the door". As you back up he unlocks the door and rushes in towards you with his sword drawn.',
+		text: playerName +' pulls on the door hard rattling its heavy frame but it does not move. However from the noise the guard has stirred and is walking towards the door. He yells at you "Back away from the door". As you back up he unlocks the door and rushes in towards you with his sword drawn.',
 		choices:[
 			{
 				text:'Side step the guard',
@@ -209,7 +209,7 @@ var roomArray = [
 	},
 	{
 		title:'Winning',
-		text:'Congratulations, you have beaten Cave Escape. Now go and proceed to waste your time on another game, go on. Get out of here :)!',
+		text:'Congratulations, you have beaten Cave Escape. Now go and proceed to another game, go on. Get out of here :)!',
 		choices:[
 			{
 				text:'Restart the game',
