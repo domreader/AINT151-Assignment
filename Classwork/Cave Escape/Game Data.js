@@ -17,7 +17,7 @@ var roomArray = [
 	},
 	{
 		title:'Inspecting the room',
-		text: playerName +' looks around the room and goes to the far wall to study it. However currently it is too dark to notice anything prominent. Maybe there is a way to brighten up the room?',
+		text:'As person looks around the room they go to the far wall and study it. However currently it is too dark to notice anything prominent. Maybe there is a way to brighten up the room?',
 		choices:[
 			{
 				text:'Look through the Crack',
@@ -209,7 +209,11 @@ var roomArray = [
 	},
 	{
 		title:'Winning',
+<<<<<<< HEAD
 		text:'Congratulations, you have beaten Cave Escape. Now go and proceed to another game, go on. Get out of here :)!',
+=======
+		text:'Congratulations, you have beaten Cave Escape. Now go and proceed to waste your time on another game, go on. Get out of here :)!',
+>>>>>>> da33829cb757c88dd966723efa4c26a873fbf52b
 		choices:[
 			{
 				text:'Restart the game',

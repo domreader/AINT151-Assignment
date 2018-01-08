@@ -1,0 +1,10 @@
+Game is called Cave Escape
+
+It's a simple play through at the moment but after its updated at the end it wil have more in it and will take more time tp complete.
+
+The story itself can be seen through the demo of the game site. In addition to this there is also a twine document linked to it which acts as a top down map. The story is likely to expand at somepoint this is just a working model
+of what it will develop into.In the Atom file there are basic images for the implementation of changing the weapon the guard will use which gets taken by 
+the player. This will be added later on as well as developed, this is the same as with background colours as photos will be inserted in at a later date. 
+There would be the story diagram as well but did not upload correctly. Player colour will also be a useful property later on. Review on tab.
+
+Please click the game tab next to home after you have finished :)
