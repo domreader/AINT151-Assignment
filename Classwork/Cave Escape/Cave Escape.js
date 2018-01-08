@@ -8,8 +8,13 @@ localStorage.setItem("playername", name);
 var colour = document.forms[0]["playercolour"].value;
 localStorage.setItem("playercolour", colour);
 
+<<<<<<< HEAD
 var weapon = document.forms[0] ["weapon"].value;
 localStorage.setItem("weapon", Weapon);
+=======
+var Weapon = document.forms[0] ["Weapon"].value;
+localStorage.setItem("Weapon", weapon);
+>>>>>>> da33829cb757c88dd966723efa4c26a873fbf52b
 }
 
 function OnLoad()

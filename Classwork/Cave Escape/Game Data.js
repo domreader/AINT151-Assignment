@@ -210,7 +210,11 @@ var roomArray = [
 	{
 		title:'Winning',
 <<<<<<< HEAD
+<<<<<<< HEAD
 		text:'Congratulations, you have beaten Cave Escape. Now go and proceed to another game, go on. Get out of here :)!',
+=======
+		text:'Congratulations, you have beaten Cave Escape. Now go and proceed to waste your time on another game, go on. Get out of here :)!',
+>>>>>>> da33829cb757c88dd966723efa4c26a873fbf52b
 =======
 		text:'Congratulations, you have beaten Cave Escape. Now go and proceed to waste your time on another game, go on. Get out of here :)!',
 >>>>>>> da33829cb757c88dd966723efa4c26a873fbf52b
