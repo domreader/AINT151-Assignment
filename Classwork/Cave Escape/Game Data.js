@@ -17,7 +17,7 @@ var roomArray = [
 	},
 	{
 		title:'Inspecting the room',
-		text:'As person looks around the room they go to the far wall and study it. However currently it is too dark to notice anything prominent. Maybe there is a way to brighten up the room?',
+		text: playerName +' looks around the room they go to the far wall and study it. However currently it is too dark to notice anything prominent. Maybe there is a way to brighten up the room?',
 		choices:[
 			{
 				text:'Look through the Crack',
@@ -27,7 +27,7 @@ var roomArray = [
 	},
 	{
 		title:'Through the crack',
-		text:'You wonder towards the door and look through the crack. On the other side there is a guard sat there next to a sword. The floor and walls are all made out of stone and have an oppressive feel to them',
+		text: playerName +' wonder towards the door and look through the crack. On the other side there is a guard sat there next to a sword. The floor and walls are all made out of stone and have an oppressive feel to them',
 		choices:[
 			{
 				text:'Try to pull the door open',
@@ -37,7 +37,7 @@ var roomArray = [
 	},
 	{
 		title:'Try to open door',
-		text: playerName +' pulls on the door hard rattling its heavy frame but it does not move. However from the noise the guard has stirred and is walking towards the door. He yells at you "Back away from the door". As you back up he unlocks the door and rushes in towards you with his sword drawn.',
+		text:playerName +' pulls on the door hard rattling its heavy frame but it does not move. However from the noise the guard has stirred and is walking towards the door. He yells at you "Back away from the door". As you back up he unlocks the door and rushes in towards you with his sword drawn.',
 		choices:[
 			{
 				text:'Side step the guard',
@@ -47,7 +47,7 @@ var roomArray = [
 	},
   {
 		title:'Side step the guard',
-		text:'Using quick instincts you side step the guard pulling his sword away from him. As you wield the blade you have the choice to either spare or end him. What will you do?',
+		text:'Using quick instincts '+ playerName +' side steps the guard pulling his sword away from him. As '+playerName+' wields the blade you have the choice to either spare or end him. What will they do?',
 		choices:[
 			{
 				text:'Spare the guards life',
@@ -61,7 +61,7 @@ var roomArray = [
 	},
   {
 		title:'Spare the guards life',
-		text:'You look at the guard and offer to spare him if he lets you retrieve your items from the chest and lets you keep the sword. He accepts your offer and gives you the key for the chest. You take the sword and retrieve your stuff from the chest.',
+		text:playerName+ ' looks at the guard and offer to spare him if he lets you retrieve your items from the chest. He accepts your offer and gives you the key for the chest. You take the weapon from the chest.',
 		choices:[
 			{
 				text:'Proceed to the next room',
@@ -71,7 +71,7 @@ var roomArray = [
 	},
 	{
 		title:'End the guards life',
-		text:'You double back and stab the guard through the stomach, the sword pulls out as he falls to the floor. You take the key for the chest off of him. You exit the room and retrieve your stuff from the chest',
+		text:'You double back and stab the guard through the stomach, the sword sticks in him as he falls to the floor. You take the key for the chest off of him. You exit the room and retrieve your weapon from the chest',
 		choices:[
 			{
 				text:'Proceed to the next room',
@@ -95,21 +95,49 @@ var roomArray = [
 	},
 	{
 		title:'Inspecting the war room',
-		text:'You look around the table closer and you can see many different documents. One is a news article on a way to break out of chains, another is arts of fighting and the last is a cookbook. Perhaps these could be useful skills to have.',
+		text:'You look around the table closer and you can see many different documents. One is an article on a way to break out of chains, another is arts of fighting and the last is a cookbook. Perhaps these could be useful skills to have.',
 		choices:[
 			{
-				text:'Head up the stairs',
+				text:'Read the article on how to break out of chains',
 				index:9
+			},
+			{
+				text:'Head up the stairs',
+				index:11
+			},
+			{
+				text:'Read the article on the arts of fighting',
+				index:10
 			}
 		]
 	},
 	{
+	title:'How to break out of chains',
+	text:'You are the lucky reciever of this article on how to get out of chains. Firstly you will need to posses some chains, next when in them to escape use the key. However if you do not have the key removal of limbs will work. Just clean the mess after',
+	choices:[
+		{
+			text:'Well that was pointless',
+			index:8
+		}
+	]
+},
+{
+title:'The arts of fighting',
+text:'Ever been in a fight you cannot win? Well this is an article for you on how to defeat an enemy who is more skilled than yourself. Firstly choose a weapon, fists will do however sometimes something like a pan could be better. Next proceed to see how your enemy strikes; apply appropriate counters to these attacks and voila. You probably have won. If not we accept no liability for your inadequacies and lack of ability.',
+choices:[
+	{
+		text:'Good to know',
+		index:8
+	}
+]
+},
+{
 		title:'Head up the stairs',
 		text:'As you head up the narrow staircase you can hear a low growl in the next room. Nervously you approach to see what could be making this noise behind the door.',
 		choices:[
 			{
 				text:'Proceed to the next room',
-				index:10
+				index:12
 			}
 		]
 	},
@@ -119,7 +147,7 @@ var roomArray = [
 		choices:[
 			{
 				text:'Start the battle',
-				index:11
+				index:13
 			}
 		]
 	},
@@ -129,11 +157,11 @@ var roomArray = [
 		choices:[
 			{
 				text:'Swing your sword around',
-				index:12
+				index:14
 			},
 			{
 				text:'Go back down the stairs',
-				index:13
+				index:15
 			}
 		]
 	},
@@ -143,7 +171,7 @@ var roomArray = [
 		choices:[
 			{
 				text:'Stab the demon',
-				index:14
+				index:16
 			}
 		]
 	},
@@ -153,7 +181,7 @@ var roomArray = [
 		choices:[
 			{
 				text:'Head back towards the cell',
-				index:15
+				index:17
 			}
 		]
 	},
@@ -163,7 +191,7 @@ var roomArray = [
 		choices:[
 			{
 				text:'Continue',
-				index:16
+				index:18
 			}
 		]
 	},
@@ -173,7 +201,7 @@ var roomArray = [
 		choices:[
 			{
 				text:'Into the cell',
-				index:17
+				index:19
 			}
 		]
 	},
@@ -183,7 +211,7 @@ var roomArray = [
 		choices:[
 			{
 				text:'Restart the battle',
-				index:11
+				index:13
 			}
 		]
 	},
@@ -193,7 +221,7 @@ var roomArray = [
 		choices:[
 			{
 				text:'Drop your weapons',
-				index:19
+				index:21
 			}
 		]
 	},
@@ -203,21 +231,13 @@ var roomArray = [
 		choices:[
 			{
 				text:'Continue',
-				index:20
+				index:22
 			}
 		]
 	},
 	{
 		title:'Winning',
-<<<<<<< HEAD
-<<<<<<< HEAD
-		text:'Congratulations, you have beaten Cave Escape. Now go and proceed to another game, go on. Get out of here :)!',
-=======
 		text:'Congratulations, you have beaten Cave Escape. Now go and proceed to waste your time on another game, go on. Get out of here :)!',
->>>>>>> da33829cb757c88dd966723efa4c26a873fbf52b
-=======
-		text:'Congratulations, you have beaten Cave Escape. Now go and proceed to waste your time on another game, go on. Get out of here :)!',
->>>>>>> da33829cb757c88dd966723efa4c26a873fbf52b
 		choices:[
 			{
 				text:'Restart the game',
