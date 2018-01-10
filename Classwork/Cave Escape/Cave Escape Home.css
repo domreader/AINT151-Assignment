@@ -10,6 +10,7 @@ html
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 /*navigation bar links*/
@@ -21,6 +22,7 @@ html
     padding: 14px 16px;
     text-decoration: none;
     font-size: 15px;
+    z-index: 2;
 }
 
 .main {
@@ -35,24 +37,26 @@ html
     padding-top: 40px;
     padding-right: 40px;
     padding-left: 40px;
-    position: inherit;
     width: auto;
-    position: sticky;
+    position: relative;
     border: 10px 10px 10px 10px
+    
+
 }
 /*game background where JS will sit*/
 #game
 {
   background-color: #704225;
-  height: 850px;
-  width: inherit;
+  height: auto;
+  width: auto;
   padding: 165px 40px 165px 40px;
   font-size: 33px;
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
   border: 5px 5px 5px 5px;
   border-color: #666;
-  position: static;
+  position: relative;
+  color: white;
 }
 
 .clear

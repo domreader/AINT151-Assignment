@@ -61,7 +61,7 @@ var roomArray = [
 	},
   {
 		title:'Spare the guards life',
-		text:playerName+ ' looks at the guard and offer to spare him if he lets you retrieve your items from the chest. He accepts your offer and gives you the key for the chest. You take the weapon from the chest.',
+		text:playerName +' looks at the guard and offer to spare him if he lets you retrieve your items from the chest. He accepts your offer and gives you the key for the chest. You take the weapon from the chest.',
 		choices:[
 			{
 				text:'Proceed to the next room',
@@ -81,7 +81,7 @@ var roomArray = [
 	},
 	{
 		title:'Proceed to the next room',
-		text:'You enter the next room and see a staircase to the next floor, around the room there are wooden tables and chairs. On top of these there are documents and other items.',
+		text:playerName +' enters the next room and sees a staircase to the next floor, around the room there are wooden tables and chairs. On top of these there are documents and other items.',
 		choices:[
 			{
 				text:'Inspect the war room',
@@ -89,7 +89,7 @@ var roomArray = [
 			},
 			{
 				text:'Head up the stairs',
-				index:9
+				index:12
 			}
 		]
 	},
@@ -103,11 +103,15 @@ var roomArray = [
 			},
 			{
 				text:'Head up the stairs',
-				index:11
+				index:12
 			},
 			{
 				text:'Read the article on the arts of fighting',
 				index:10
+			},
+			{
+				text:'Read the cookbook',
+				index:11
 			}
 		]
 	},
@@ -132,12 +136,23 @@ choices:[
 ]
 },
 {
+title:'Complete Cooking for Cooks',
+text:'The book itself has fallen apart and is in pieces however the words you can see look like it may have once been useful but that is not the case now.',
+choices:[
+	{
+		text:'Maybe someone ate the cookbook',
+		index:8
+	}
+]
+},
+
+{
 		title:'Head up the stairs',
-		text:'As you head up the narrow staircase you can hear a low growl in the next room. Nervously you approach to see what could be making this noise behind the door.',
+		text:'As '+ playerName +' heads up the narrow staircase they can hear a low growl in the next room. Nervously '+ playerName +' approaches to see what could be making this noise behind the door.',
 		choices:[
 			{
 				text:'Proceed to the next room',
-				index:12
+				index:13
 			}
 		]
 	},
@@ -147,7 +162,7 @@ choices:[
 		choices:[
 			{
 				text:'Start the battle',
-				index:13
+				index:14
 			}
 		]
 	},
@@ -157,11 +172,11 @@ choices:[
 		choices:[
 			{
 				text:'Swing your sword around',
-				index:14
+				index:15
 			},
 			{
 				text:'Go back down the stairs',
-				index:15
+				index:16
 			}
 		]
 	},
@@ -171,7 +186,7 @@ choices:[
 		choices:[
 			{
 				text:'Stab the demon',
-				index:16
+				index:17
 			}
 		]
 	},
@@ -181,7 +196,7 @@ choices:[
 		choices:[
 			{
 				text:'Head back towards the cell',
-				index:17
+				index:18
 			}
 		]
 	},
@@ -191,7 +206,7 @@ choices:[
 		choices:[
 			{
 				text:'Continue',
-				index:18
+				index:19
 			}
 		]
 	},
@@ -201,7 +216,7 @@ choices:[
 		choices:[
 			{
 				text:'Into the cell',
-				index:19
+				index:20
 			}
 		]
 	},
@@ -211,7 +226,7 @@ choices:[
 		choices:[
 			{
 				text:'Restart the battle',
-				index:13
+				index:14
 			}
 		]
 	},
