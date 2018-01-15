@@ -1,4 +1,5 @@
 var playerName = localStorage.getItem("playername");
+var playerweapon = localStorage.getItem("playerweapon");
 
 var roomArray = [
 	{
@@ -37,7 +38,7 @@ var roomArray = [
 	},
 	{
 		title:'Try to open door',
-		text:playerName +' pulls on the door hard rattling its heavy frame but it does not move. However from the noise the guard has stirred and is walking towards the door. He yells at you "Back away from the door". As you back up he unlocks the door and rushes in towards you with his sword drawn.',
+		text:playerName +' pulls on the door hard rattling its heavy frame but it does not move. However from the noise the guard has stirred and is walking towards the door. He yells "Back away from the door". As '+playerName+' backs up he unlocks the door and rushes in with his sword drawn.',
 		choices:[
 			{
 				text:'Side step the guard',
@@ -47,7 +48,7 @@ var roomArray = [
 	},
   {
 		title:'Side step the guard',
-		text:'Using quick instincts '+ playerName +' side steps the guard pulling his sword away from him. As '+playerName+' wields the blade you have the choice to either spare or end him. What will they do?',
+		text:'Using quick instincts '+ playerName +' side steps the guard pulling his sword away from him. As '+playerName+' wields the blade they have the choice to either spare or end him. What will they do?',
 		choices:[
 			{
 				text:'Spare the guards life',
@@ -61,7 +62,7 @@ var roomArray = [
 	},
   {
 		title:'Spare the guards life',
-		text:playerName +' looks at the guard and offer to spare him if he lets you retrieve your items from the chest. He accepts your offer and gives you the key for the chest. You take the weapon from the chest.',
+		text:playerName +' looks at the guard and offer to spare him if he lets them retrieve the items from the chest. He accepts the offer and hands over the key for the chest. '+playerName+' takes the '+playerweapon+' from the chest.',
 		choices:[
 			{
 				text:'Proceed to the next room',
@@ -71,7 +72,7 @@ var roomArray = [
 	},
 	{
 		title:'End the guards life',
-		text:'You double back and stab the guard through the stomach, the sword sticks in him as he falls to the floor. You take the key for the chest off of him. You exit the room and retrieve your weapon from the chest',
+		text: playerName+' doubles back and stabs the guard through the stomach, the sword sticks in him as he falls to the floor. '+playerName+' takes the key for the chest; exits the room and retrieves the '+playerweapon+' from the chest',
 		choices:[
 			{
 				text:'Proceed to the next room',
@@ -95,7 +96,7 @@ var roomArray = [
 	},
 	{
 		title:'Inspecting the war room',
-		text:'You look around the table closer and you can see many different documents. One is an article on a way to break out of chains, another is arts of fighting and the last is a cookbook. Perhaps these could be useful skills to have.',
+		text: playerName+' looks around the table closer and can see many different documents. One is an article on a way to break out of chains, another is arts of fighting and the last is a cookbook. Perhaps these could be useful skills to have.',
 		choices:[
 			{
 				text:'Read the article on how to break out of chains',
@@ -140,7 +141,7 @@ title:'Complete Cooking for Cooks',
 text:'The book itself has fallen apart and is in pieces however the words you can see look like it may have once been useful but that is not the case now.',
 choices:[
 	{
-		text:'Maybe someone ate the cookbook',
+		text:'Maybe someone ate the cookbook?',
 		index:8
 	}
 ]
@@ -153,12 +154,16 @@ choices:[
 			{
 				text:'Proceed to the next room',
 				index:13
+			},
+			{
+				text:'Wait, what did the rest of the books say.',
+				index:8
 			}
 		]
 	},
 	{
 		title:'Finding the demon',
-		text:'In the centre of the room with its back to you there is a dark figure, it has a dark aura surrounding it which makes it very clear it is not human. The creature makes a low growl which echoes inside of the walls becoming deafening. You wield your sword.',
+		text:'In the centre of the room with its back to the door is a dark figure, it has a dark aura surrounding it which makes it very clear it is not human. The creature makes a low growl which echoes inside of the walls becoming deafening. '+playerName+'wields the '+playerweapon+'.',
 		choices:[
 			{
 				text:'Start the battle',
@@ -168,10 +173,10 @@ choices:[
 	},
 	{
 		title:'Starting the battle',
-		text:'The demon turns and to your shock the blood red eyes stare deep into you making you feel uneasy. Summoning the might you have you stand tall and get ready to take on this unholy creature, when suddenly he shifts to the other side of the room through you.',
+		text:"The demon turns and the shock of it's blood red eyes make "+playerName+" feel uneasy. Summoning the might "+playerName+" stands tall and get ready to take on this unholy creature. Suddenly the demon shifts to the other side of the room with a horrible high pitched whistle.",
 		choices:[
 			{
-				text:'Swing your sword around',
+				text:'Swing the '+playerweapon+' around',
 				index:15
 			},
 			{
@@ -181,18 +186,18 @@ choices:[
 		]
 	},
 	{
-		title:'Swing your sword around',
-		text:'You swing your sword violently around you in an arc trying to attack the demon and you finally get a hit. The demon recoils back and falls to a knee as black blood drips down from the cut on its side; looking into its eyes you still see no trace of fear or worry but instead the demon bares its teeth almost like a smile.',
+		title:'Swing '+playerweapon+' around',
+		text: playerName+' swings the '+playerweapon+' violently around in an arc trying to attack the demon and finally lands a blow. The demon recoils back and falls to a knee as black blood drips down from the hit; looking into its eyes there is still no trace of fear or worry but instead the demon bares its teeth almost like an evil grin.',
 		choices:[
 			{
-				text:'Stab the demon',
+				text:'Attack the demon',
 				index:17
 			}
 		]
 	},
 	{
 		title:'Go back down the stairs',
-		text:'You decide to rush towards the stairs and proceed to go down them. However in your haste you trip and fall down the remaining stairs;  the demon stands at the top of the staircase staring at you still with the blood red eyes.',
+		text:playerName+" rushes towards the stairs and proceed to go down them. However in their haste they trip and fall down the remaining stairs;  the demon stands at the top of the staircase seemingly lifeless staring down with it's blood red eyes.",
 		choices:[
 			{
 				text:'Head back towards the cell',
@@ -202,7 +207,7 @@ choices:[
 	},
 	{
 		title:'Demon Attack',
-		text:'You move forward and push the sword forward into the demons chest. As you continue to push it the tip of the sword does not come out of its back but instead seems to being absorbed until it disappears fully and then your hand follows it. The pain is unbearable as blood drips down from your hand then arm. You feel your body go numb as you drop to the floor.',
+		text:playerName+' moves forwards and swings the '+playerweapon+' into the demons chest. The weapon lands a hit however it cannot be pulled away; instead it seems to being absorbed until it disappears fully and then a hand follows it. The pain is unbearable as blood drips down from the hand then the arm. '+playerName+' feels their body go numb and drops to the floor.',
 		choices:[
 			{
 				text:'Continue',
@@ -212,7 +217,7 @@ choices:[
 	},
 	{
 		title:'Back towards the cell',
-		text:'You get back up on your feet and run towards the cell. The further you run down the corridor it seems as if it is forever ending; whether this is what it seems or there are tricks being played upon you is unclear. The demon is stood at the beginning of the corridor with his head tilted sideways staring at you still. Finally you reach the end of the corridor.',
+		text:playerName+' gets back up on their feet and runs towards the cell. The further they run down the corridor it seems as if it is forever ending; whether this is what it seems or there are tricks being played is unclear. The demon is stood at the beginning of the corridor with his head tilted sideways staring down the corridor. Finally '+playerName+' reaches the end of the corridor.',
 		choices:[
 			{
 				text:'Into the cell',
@@ -222,7 +227,7 @@ choices:[
 	},
 	{
 		title:'Death',
-		text:'Unfortunately you have failed in escaping. Maybe next time?',
+		text:'Unfortunately the escape is over. Maybe next time?',
 		choices:[
 			{
 				text:'Restart the battle',
@@ -232,17 +237,17 @@ choices:[
 	},
 	{
 		title:'Into the cell',
-		text:'You go back into your cell and the torch illuminates the once dark walls and a message is inscribed upon the wall saying "Drop your weapons and the fight will be won". As you read this the demon enters the room standing at the doorway. It stares at you and awaits to see what you are going to do next.',
+		text:playerName+' goes back into the cell and the torch illuminates the once dark walls and a message is inscribed upon the wall saying "Drop all weapons and the fight will be won". As this is read the demon enters the room standing at the doorway. It stands there waiting to see what will happen next.',
 		choices:[
 			{
-				text:'Drop your weapons',
+				text:'Drop the '+playerweapon,
 				index:21
 			}
 		]
 	},
 	{
 		title:'Survival',
-		text:'You drop your weapons and the demon watches them fall to the floor. A loud scream is heard all around as everything goes bright and blinds you; you pass out and wake up back at home in bed. It seems as if it was all a dream, or was it?',
+		text:playerName+' drops the '+playerweapon+' and the demon watches them fall to the floor. A loud scream is heard all around as everything goes bright and becomes blinding; this leads to '+playerName+' passing out and awakening back at home in bed. It seems as if it was all a dream, or was it?',
 		choices:[
 			{
 				text:'Continue',
@@ -252,7 +257,7 @@ choices:[
 	},
 	{
 		title:'Winning',
-		text:'Congratulations, you have beaten Cave Escape. Now go and proceed to waste your time on another game, go on. Get out of here :)!',
+		text:'Congratulations, '+playerName+' has escaped from the cave hell. Now go and proceed to waste your time on another game, go on. Get out of here :)!',
 		choices:[
 			{
 				text:'Restart the game',

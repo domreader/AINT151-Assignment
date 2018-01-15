@@ -1,3 +1,5 @@
+
+function OnLoad()
 {
 	document.getElementById('roomTitle').innerHTML = roomArray[0].title
 
@@ -5,6 +7,19 @@
 
 	SelectRoom(0);
 }
+
+function StorePlayerData()
+{
+var name = document.forms[0]["playername"].value;
+localStorage.setItem("playername", name);
+
+var colour = document.forms[0]["playercolour"].value;
+localStorage.setItem("playercolour", colour);
+
+var weapon = document.forms[0]["playerweapon"].value;
+localStorage.setItem("playerweapon", weapon);
+}
+
 
 function SelectRoom(roomIndex)
 {
