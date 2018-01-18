@@ -33,23 +33,23 @@ html
 
 #container {
     background-color: white;
-    height: auto;
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-left: 40px;
+    height: 90%;
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
     width: auto;
     position: relative;
     border: 10px 10px 10px 10px
-    
+
 
 }
 /*game background where JS will sit*/
 #game
 {
   background-color: #704225;
-  height: auto;
-  width: auto;
-  padding: 165px 40px 165px 40px;
+  height: static;
+  width: 93%;
+  padding: 5% 5% 5% 5%;
   font-size: 33px;
   text-align: left;
   vertical-align: middle;

@@ -8,11 +8,25 @@ var roomArray = [
 		choices:[
 			{
 				text:'Inspect the room',
-				index:1
+				index:2
 			},
 			{
 				text:'Look through the crack',
+				index:3
+			},
+			{
+				text:'Should I actually get up',
 				index:1
+			}
+		]
+	},
+	{
+		title:'Should I actually get up?',
+		text:'You, yes you playing this game. Surely this is not going to be super interesting? Have they announced Half Life 3 yet?',
+		choices:[
+			{
+				text:'Well now that we have got that out of the way.',
+				index:0
 			}
 		]
 	},
@@ -22,19 +36,51 @@ var roomArray = [
 		choices:[
 			{
 				text:'Look through the Crack',
-				index:2
+				index:3
+			},
+			{
+				text:'Inspect the toilet',
+				index:4
+			},
+			{
+				text:'Inspect the small hole in the wall',
+				index:5
 			}
 		]
 	},
 	{
 		title:'Through the crack',
-		text: playerName +' wonder towards the door and look through the crack. On the other side there is a guard sat there next to a sword. The floor and walls are all made out of stone and have an oppressive feel to them',
+		text: playerName +' wonders towards the door and look through the crack. On the other side there is a guard sat there next to a sword. The floor and walls are all made out of stone and have an oppressive feel to them',
 		choices:[
 			{
-				text:'Try to pull the door open',
-				index:3
+				text:'Try to open the door',
+				index:6
 			},
-					]
+			{
+				text:'Have you inspected the room you are in?',
+				index:2
+			}
+		]
+	},
+	{
+		title:'Inspect the toilet',
+		text: playerName +' wonders over to the small metal toilet in the corner, looking in it there is no water and it seems to not be plumbed in. Definitely not luxury hotel standard.',
+		choices:[
+			{
+				text:'Maybe there is something else to look at?',
+				index:2
+			}
+		]
+	},
+	{
+		title:'Inspect the small hole in the wall',
+		text: playerName +' wonders towards the wall and peers through the small hole. This would be perfect to climb through if humans evolved to be super tiny. Maybe the next game?',
+		choices: [
+			{
+				text:'Maybe there is something else to look at?',
+				index:2
+			}
+		]
 	},
 	{
 		title:'Try to open door',
@@ -42,7 +88,7 @@ var roomArray = [
 		choices:[
 			{
 				text:'Side step the guard',
-				index:4
+				index:7
 			}
 		]
 	},
@@ -52,11 +98,11 @@ var roomArray = [
 		choices:[
 			{
 				text:'Spare the guards life',
-				index:5
+				index:8
 			},
 			{
 				text:'End the guards life',
-				index:6
+				index:9
 			}
 		]
 	},
@@ -66,7 +112,7 @@ var roomArray = [
 		choices:[
 			{
 				text:'Proceed to the next room',
-				index:7
+				index:10
 			}
 		]
 	},
@@ -76,7 +122,7 @@ var roomArray = [
 		choices:[
 			{
 				text:'Proceed to the next room',
-				index:7
+				index:10
 			}
 		]
 	},
@@ -86,11 +132,11 @@ var roomArray = [
 		choices:[
 			{
 				text:'Inspect the war room',
-				index:8
+				index:11
 			},
 			{
 				text:'Head up the stairs',
-				index:12
+				index:15
 			}
 		]
 	},
@@ -100,19 +146,19 @@ var roomArray = [
 		choices:[
 			{
 				text:'Read the article on how to break out of chains',
-				index:9
-			},
-			{
-				text:'Head up the stairs',
 				index:12
 			},
 			{
+				text:'Head up the stairs',
+				index:15
+			},
+			{
 				text:'Read the article on the arts of fighting',
-				index:10
+				index:13
 			},
 			{
 				text:'Read the cookbook',
-				index:11
+				index:14
 			}
 		]
 	},
@@ -122,7 +168,7 @@ var roomArray = [
 	choices:[
 		{
 			text:'Well that was pointless',
-			index:8
+			index:11
 		}
 	]
 },
@@ -132,7 +178,7 @@ text:'Ever been in a fight you cannot win? Well this is an article for you on ho
 choices:[
 	{
 		text:'Good to know',
-		index:8
+		index:11
 	}
 ]
 },
@@ -142,7 +188,7 @@ text:'The book itself has fallen apart and is in pieces however the words you ca
 choices:[
 	{
 		text:'Maybe someone ate the cookbook?',
-		index:8
+		index:11
 	}
 ]
 },
@@ -153,11 +199,11 @@ choices:[
 		choices:[
 			{
 				text:'Proceed to the next room',
-				index:13
+				index:16
 			},
 			{
 				text:'Wait, what did the rest of the books say.',
-				index:8
+				index:11
 			}
 		]
 	},
@@ -167,7 +213,11 @@ choices:[
 		choices:[
 			{
 				text:'Start the battle',
-				index:14
+				index:17
+			},
+			{
+				text:'The pacifist route',
+				index:18
 			}
 		]
 	},
@@ -177,10 +227,20 @@ choices:[
 		choices:[
 			{
 				text:'Swing the '+playerweapon+' around',
-				index:15
+				index:19
 			},
 			{
 				text:'Go back down the stairs',
+				index:20
+			}
+		]
+	},
+	{
+		title:'The pacifist route',
+		text:"Seeing the demon "+playerName+" has somehow come to the conclusion that they could reason with this evil. As they open their mouth the demon gets bored and sits down sobbing at the thought of the possible excitement that could have been had if this unfortunate event produced a fighter instead. ",
+		choices:[
+			{
+				text:'Let us rewind a little bit',
 				index:16
 			}
 		]
@@ -191,7 +251,7 @@ choices:[
 		choices:[
 			{
 				text:'Attack the demon',
-				index:17
+				index:21
 			}
 		]
 	},
@@ -201,7 +261,7 @@ choices:[
 		choices:[
 			{
 				text:'Head back towards the cell',
-				index:18
+				index:22
 			}
 		]
 	},
@@ -211,7 +271,7 @@ choices:[
 		choices:[
 			{
 				text:'Continue',
-				index:19
+				index:23
 			}
 		]
 	},
@@ -221,7 +281,7 @@ choices:[
 		choices:[
 			{
 				text:'Into the cell',
-				index:20
+				index:24
 			}
 		]
 	},
@@ -231,7 +291,7 @@ choices:[
 		choices:[
 			{
 				text:'Restart the battle',
-				index:14
+				index:17
 			}
 		]
 	},
@@ -241,7 +301,7 @@ choices:[
 		choices:[
 			{
 				text:'Drop the '+playerweapon,
-				index:21
+				index:25
 			}
 		]
 	},
@@ -251,7 +311,7 @@ choices:[
 		choices:[
 			{
 				text:'Continue',
-				index:22
+				index:26
 			}
 		]
 	},
